@@ -133,9 +133,14 @@ namespace :db do
   end
 end
 
-desc 'Start PRY with application environment loaded'
+desc 'Start IRB with application environment loaded'
 task "console" do
-  exec "pry -r./config/environment"
+  exec "irb -r./config/environment"
+end
+
+desc "Open database #{DB_NAME}"
+task "open-db" do
+  exec "psql #{DB_NAME}"
 end
 
 

@@ -1,11 +1,14 @@
 source 'https://rubygems.org'
 
+gem 'unicorn'
 # PostgreSQL driver
+
 gem 'pg'
 
 # Sinatra driver
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem "sinatra-cross_origin", "~> 0.3.1"
 
 gem 'activesupport', '~>4.2.0'
 gem 'activerecord', '~>4.2.0'
@@ -27,4 +30,6 @@ end
 
 group :test, :development do
   gem 'factory_girl'
+  gem 'dotenv'
+  
 end
