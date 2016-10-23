@@ -1,9 +1,15 @@
 <h1>USERS SHOW / PROFILE PAGE</h1>
 <h2>get '/users/:id'</h2>
 
-<% if current_user %>
-  <h2>Welcome <%= current_user.username %>!</h2>
-  
+<%# if current_user %>
+  <h2>Welcome <%#= current_user.username %>!</h2>
+<div class="sandbox-container">
+  <h2>querry</h2>
+  <%= test %>
+     <%#= obj.inspect %>
+     <%#end%>
+</div>
+
   <div class= "user stats">
       <h3>USER STATS GO HERE</h3>
        <ul>
@@ -43,4 +49,3 @@
 
 </div>	
 
-<% end %>

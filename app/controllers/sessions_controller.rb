@@ -7,7 +7,7 @@ post '/sessions' do
   @user = User.find_by_email(params[:email])
 
   if @user && @user.password == params[:password]
-    # session[:id] = @user.id
+    session[:id] = @user.id
     login(@user)
     redirect '/'
 
@@ -21,7 +21,7 @@ end
 
 # delete '/sessions/:id' do
 delete '/sessions' do
-  # session[:id] = nil
+  session[:id] = nil
   logout 
   redirect '/'
 end

@@ -10,11 +10,11 @@ require 'rubygems'
 require 'pry'
 require 'uri'
 require 'pathname'
-
+require 'github_api'
 require 'pg'
 require 'active_record'
 require 'logger'
-
+require 'octokit'
 
 
 require 'sinatra'

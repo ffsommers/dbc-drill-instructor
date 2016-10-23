@@ -3,9 +3,9 @@ source 'https://rubygems.org'
 gem 'unicorn'
 gem 'pry'
 # PostgreSQL driver
-
+gem "github_api"
 gem 'pg'
-
+gem 'octokit'
 # Sinatra driver
 gem 'sinatra'
 gem 'sinatra-contrib'

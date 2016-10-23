@@ -9,3 +9,6 @@ gets users organizations
 
 gets users repos for coyotes 
     curl -X GET -u $GITHUB_TOKEN:x-oauth-basic "https://api.github.com/orgs/sf-coyotes-2016/repos"	
+
+
+curl -X GET -u $GITHUB_TOKEN:x-oauth-basic 'https://api.github.com/orgs/sf-coyotes-2016/repos'
