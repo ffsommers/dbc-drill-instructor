@@ -1,0 +1,11 @@
+GITHUB API SANDBOX 
+
+
+REQUESTS
+
+gets users organizations
+
+	curl -X GET -u $GITHUB_TOKEN:x-oauth-basic 'https://api.github.com/user/orgs'
+
+gets users repos for coyotes 
+    curl -X GET -u $GITHUB_TOKEN:x-oauth-basic "https://api.github.com/orgs/sf-coyotes-2016/repos"	
