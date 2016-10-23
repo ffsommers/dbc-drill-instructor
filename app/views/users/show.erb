@@ -3,5 +3,44 @@
 
 <% if current_user %>
   <h2>Welcome <%= current_user.username %>!</h2>
+  
+  <div class= "user stats">
+      <h3>USER STATS GO HERE</h3>
+       <ul>
+         <li>% of Challenges Complete</li>
+         <li># of commits</li>
+         <li>class Rank</li>	
+       </ul>	
+  </div>
+
+<div class="category-box"> 
+  
+  <div class= "category-crud">
+    <h3>CRUD challenges</h3>
+       <p>PHASE REPOS FOR REST CHALLENGES SHOULD SHOW UP HERE</p>
+  </div>
+  
+  <div class="category-auth">
+      <h3>User Authentication Challenges</h3>
+       <p>PHASE REPOS FOR REST CHALLENGES SHOULD SHOW UP HERE</p>
+  </div>
+  
+  <div class="category-oojs">
+  	<h3>OOJS Challenges</h3>
+    <p>PHASE REPOS FOR REST CHALLENGES SHOULD SHOW UP HERE
+    </p>
+  </div>
+
+  <div class="category-ajax">
+    <h3>AJAX Challenges</h3>
+    <p>PHASE REPOS FOR REST CHALLENGES SHOULD SHOW UP HERE</p> 
+  </div>
+
+  <div class= "category-api">	
+     <h3>API Challenges</h3>
+     <p>PHASE REPOS FOR REST CHALLENGES SHOULD SHOW UP HERE</p>
+  </div>
+
+</div>	
 
 <% end %>

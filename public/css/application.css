@@ -1,5 +1,12 @@
 header{background-color:orange;}
 body{
 	background-color: purple;
-	
+
+}
+
+.category-box{
+	border: solid black 5px;
+	border-radius: 8px;
+	padding: 2%;
+	margin:2%;
 }
