@@ -1,10 +1,7 @@
 helpers do
 
-	# def commits(repo, sha_or_branch="master", options{})
 
 	
-		
-
       #estabilshes request connection with Oauth
 		def start_client
          @client=Octokit::Client.new :access_token => ENV['GITHUB_KEY']

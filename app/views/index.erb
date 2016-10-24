@@ -1,5 +1,6 @@
-
-
+<% if !current_user %>
+<% redirect '/sessions/new' %>
+ <%end%>
 <div class="homepage">
 	<h1>Welcome Boot!</h1>
 	<h2>sign in to slay code!</h2>

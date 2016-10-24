@@ -21,8 +21,9 @@ end
 
 # delete '/sessions/:id' do
 get '/logout' do
-  session.clear
   
+  logout
+
   redirect '/'
 end
 
