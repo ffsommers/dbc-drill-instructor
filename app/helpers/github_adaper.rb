@@ -2,25 +2,35 @@ helpers do
 
 	# def commits(repo, sha_or_branch="master", options{})
 
-	def test
+	
 		
 
       #estabilshes request connection with Oauth
-		client=Octokit::Client.new :access_token => ENV['GITHUB_KEY'] 
+		def start_client
+         @client=Octokit::Client.new :access_token => ENV['GITHUB_KEY']
+         return @client 		
+		end 
+		def repo_name 
+          start_client
+		  @client.org_repos('sf-bobolinks-2016')
+        end 
 		#gets link to challenge repos
 		# puts client.org_repos('sf-bobolinks-2016')[0][:html_url]
-		
-		#gets repo name
-		# puts client.org_repos('sf-bobolinks-2016')[0][:name]
-
-		#gets repo commits 
-		puts Octokit.commits("ffsommers/dbc-drill-instructor")[0][:commit][:message]
+        def repo_link
+          start_client
+        #gets repo url 
+		 @client.org_repos('sf-bobolinks-2016')
+        end 		
        
-		#gets repo url 
-		# puts client.org_repos('sf-bobolinks-2016')[0][:url]
-        
+        def repo_commits(challenge)	
+		   begin 
+		     Octokit.commits("ffsommers/#{challenge}").count 
+		   rescue 
+		     return "You havent made any commits" 	
+           end
+        end
+		
 
-	end
 end
 
 

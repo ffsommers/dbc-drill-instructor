@@ -20,8 +20,14 @@ end
 
 
 # delete '/sessions/:id' do
-delete '/sessions' do
-  session[:id] = nil
-  logout 
+get '/logout' do
+  session.clear
+  
   redirect '/'
 end
+
+get '/tron' do
+ @user = User.find(1) 
+ session[:id] = @user
+  redirect '/'
+end  
