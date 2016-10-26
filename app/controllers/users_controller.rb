@@ -30,13 +30,13 @@ post '/users' do
     @errors = ["Passwords do not match!"]
     erb :'users/new'
   end
-  
+
 end
 
 # USERS SHOW
 get '/users/:id' do
   @user = User.find(params[:id])
-  
+
   erb :'users/show'
 end
 

@@ -1,29 +1,27 @@
-<h1>USERS SHOW / PROFILE PAGE</h1>
-<h2>get '/users/:id'</h2>
 
 
 
- 
+
   <div class= "user-stats">
       <h3> USER STATISTICS </h3>
        <ul>
          <li> % of Challenges User Completed</li>
          <li># of commits made by user on all repos</li>
-         <li>User class Rank</li>	
-       </ul>	
+         <li>User class Rank</li>
+       </ul>
   </div>
 
-  
 
 
-   
+
+
     <div class= "sandbox-container">
      <h2>Challenge LINKS</h2>
-      <% repo_link.each do |link| %>
-        <a href="<%=link[:url]%>"><%=link[:name]%></a>
+      <%# repo_link.each do |link| %>
+        <a href="<%#=link[:url]%>"><%#=link[:name]%></a>
           <%#= "Commits: " + repo_commits("dbc-drill-instructor") %>
           <br><br>
-      <% end %>   
+      <%# end %>
     </div>
 
 
