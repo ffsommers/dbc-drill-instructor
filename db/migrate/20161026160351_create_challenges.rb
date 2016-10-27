@@ -5,6 +5,8 @@ class CreateChallenges < ActiveRecord::Migration
       t.string :url
       t.integer :commits
       t.integer :user_id
+      t.integer :tag_id
+
 
       t.timestamps
     end

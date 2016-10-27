@@ -1,0 +1,7 @@
+<div class="sandbox-container">
+  <h1>active record challenges</h1>
+  <% @challenges.each do |challenge|  %>
+    <a href="<%= challenge.url %>"><%=challenge.name%></a>
+   <% end %>
+
+</div>
