@@ -16,4 +16,5 @@ helpers do
   def logout
     session[:id] = nil
   end
+
 end

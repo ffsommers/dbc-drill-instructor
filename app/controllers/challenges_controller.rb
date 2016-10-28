@@ -1,5 +1,8 @@
 get '/challenges' do
-@ar_challenges = Challenge.tags.find(name: "active record")
-@challenges = Challenge.all
-erb :"challenges/index"
+   ar_challenges_name.each do |key,value |
+
+   end
+  erb :"challenges/index"
 end
+
+
